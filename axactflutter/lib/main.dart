@@ -1,3 +1,5 @@
+import 'package:axactflutter/screens/container.dart';
+import 'package:axactflutter/screens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,22 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-          appBar: AppBar(
-            title: Text("Session 2"),
-          ),
-          body: Center(
-            child: Container(
-              padding: EdgeInsets.all(50),
-              child: Image(
-                image: AssetImage("assets/wallpaper3.jpg"),
-              ),
-            ),
-          )),
+      home: Demo(),
     );
   }
 }
